@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <list-length [moviesLength]="movies.length"></list-length>
+  <ul class="movies">
+    <li *ngFor="let movieItem of movies">
+      <movie
+        [name]="movieItem.name"
+        [urlPoster]="movieItem.urlPoster"
+        [year]="movieItem.year"
+      ></movie>
+    </li>
+  </ul>
+</div>

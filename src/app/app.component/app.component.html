@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <header-title [msg]="title"></header-title>
+  <filter (onFilter)="handleFilter($event)"></filter>
+  <list-movie [filter]="filter"></list-movie>
+</div>
